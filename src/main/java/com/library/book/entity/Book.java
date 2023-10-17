@@ -1,7 +1,6 @@
 package com.library.book.entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
@@ -25,12 +24,12 @@ public class Book {
     @CreationTimestamp
     @Basic(optional = false)
     @Column(updatable= false)
-    protected LocalDateTime createdAt;
+    private LocalDateTime createdAt;
 
     @Setter
     @UpdateTimestamp
     @Basic(optional = false)
-    protected LocalDateTime updatedAt;
+    private LocalDateTime updatedAt;
 
 
 }
