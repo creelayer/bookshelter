@@ -11,7 +11,7 @@
     <tbody>
     <c:forEach items="${books}" var="book">
         <tr>
-            <td>${book.name}</td>
+            <td><c:out value="${book.name}" /></td>
             <td>${book.createdAt}</td>
         </tr>
     </c:forEach>
